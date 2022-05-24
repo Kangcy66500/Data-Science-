@@ -2,3 +2,10 @@ This programs focus
 Write a program that prompts for a file name, then opens that file and reads through the file, 
 and print the contents of the file in upper case. Use the file words.txt to produce the output below.
 
+# Use words.txt as the file name
+fname = input("py.words.txt")
+fh = open("words.txt" ,"r") # This phrase using the file in the Question descriping: "words.txt" , and read it
+for line in fh: # Setting the loop, because we need to read every in each line
+   line =line.rstrip()  # If we don't use rstrip(), in the end of each phrase the program will output the  blank  after reading each line 
+   line =line.upper() # We transforme output from lower to  upper case.
+   print(line)
